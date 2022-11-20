@@ -14,7 +14,7 @@
       <li><Link to="/">Home</Link></li>
       <li><Link to="projects">Project</Link></li>
       <li><Link to="uses">Uses</Link></li>
-      <li><a href="">Source Code</a></li>
+      <li><a href="https://github.com/TherryHilaire/portofolio">Source Code</a></li>
     </ul>
     <div>
      <Route path="/"><Home /></Route>
