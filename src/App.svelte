@@ -4,6 +4,7 @@
     import NotFound from "./pages/NotFound.svelte";
     import { Router, Route, Link } from "svelte-routing";
     import Uses from "./pages/Uses.svelte";
+    import Contact from "./pages/Contact.svelte";
 
     export let url = "";
 </script>
@@ -14,12 +15,14 @@
       <li><Link to="/">Home</Link></li>
       <li><Link to="projects">Project</Link></li>
       <li><Link to="uses">Uses</Link></li>
+      <li><Link to="contact">Contact</Link></li>
       <li><a href="https://github.com/TherryHilaire/portofolio">Source Code</a></li>
     </ul>
     <div>
      <Route path="/"><Home /></Route>
      <Route path="projects" component="{Project}" />
      <Route path="uses" component="{Uses}"></Route>
+     <Route path="contact" component="{Contact}"></Route>
     </div>
     <Route component="{NotFound}" />
   </Router>
@@ -68,6 +71,6 @@ li :global(a):hover {
 	font-weight: 400;
 	font-stretch: normal;
 	font-style: normal;
-	src: url('./ttf/iosevka-regular.ttf') format('truetype'), url('./woff2/iosevka-regular.woff2') format('woff2');
+	src:  url('./woff2/iosevka-regular.woff2') format('woff2');
 }
 </style>

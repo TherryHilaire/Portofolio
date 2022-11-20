@@ -8,7 +8,7 @@
     import Keyboard from "./posts/Keyboard.svelte";
     import Computer from "./posts/Computer.svelte";
     import Mouse from "./posts/Mouse.svelte";
-    import Workflow from "./posts/Workflow.svelte";
+    import Yew from "./posts/Yew.svelte";
 </script>
 
 <Typewriter>
@@ -23,23 +23,23 @@ idea to show you my tools and workflow.</h3>
   <div class="rust"><Rust /></div>
   <div class="bevy"><Bevy /></div>
   <div class="svelte"><Svelte /></div>  
+  <div class="yew"><Yew /></div>
   <div class="computer"><Computer /></div>
   <div class="ide"><IDE /></div>
   <div class="keyboard"><Keyboard /></div>
   <div class="mouse"><Mouse /></div>
-  <div class="workflow"><Workflow /></div>
 </div>
 
 <style>
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto;
-    padding: 10px;
-    gap: 15px;
+    grid-template-columns: auto auto auto;
+    margin: auto;
+    justify-content: center;
+    gap: 20px;
 }
-
 .title {
-    color: grey;
+    color: white;
     font-size: 25px; 
     text-decoration: underline;
     padding-left: 10px;
@@ -52,5 +52,19 @@ idea to show you my tools and workflow.</h3>
     margin-right: auto;
     width: 55%;
     text-align: center;
+}
+
+.keyboard {
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+.mouse {
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 3;
 }
 </style>
